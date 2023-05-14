@@ -1,0 +1,47 @@
+@php
+    $id = $telefono->id ?? '';
+    $mostrarPrincipal = $telefono?->principal ?? null;
+@endphp
+<div class="card-toolbar">
+    <div class="dropdown dropdown-inline">
+        <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="nav-link-icon flaticon-settings-1"></i>
+            <span class="nav-link-text">Opciones</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-md dropdown-menu-right" x-placement="top-end" style="position: absolute; transform: translate3d(-200px, -350px, 0px); top: 0px; left: 0px; will-change: transform;">
+            <ul class="navi navi-hover">
+                <li class="navi-header font-weight-bold py-4">
+                    <span class="font-size-lg">Opciones</span>
+                    <i class="flaticon-cogwheel-1" data-toggle="tooltip" data-placement="right" title="" data-original-title="Click to learn more..."></i>
+                </li>
+                <li class="navi-separator mb-3 opacity-70"></li>
+                <li class="navi-item">
+                    <a class="navi-link btnEditarTelefono" title="Editar telefono." data-modificar="{{$id}}">
+                        <i class="text-warning flaticon-edit-1"></i>
+                        <span class="navi-text">
+                            <span class="text-dark">&nbsp;&nbsp;Editar</span>
+                        </span>
+                    </a>
+                </li>
+                @if (!$mostrarPrincipal)
+                    <li class="navi-item">
+                        <a class="navi-link btnPincipalTelefono" title="Telefono principal." data-principal="{{$id}}">
+                            <i class="text-warning flaticon-star"></i>
+                            <span class="navi-text">
+                                <span class="text-dark">&nbsp;&nbsp;Principal</span>
+                            </span>
+                        </a>
+                    </li>
+                @endif
+                <li class="navi-item" title="Eliminar telefono." data-eliminar="{{ $id }}">
+                    <a class="navi-link btnEliminarTelefono">
+                        <i class="text-danger fas fa-trash"></i>
+                        <span class="navi-text">
+                            <span class="text-dark">&nbsp;&nbsp;Eliminar</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

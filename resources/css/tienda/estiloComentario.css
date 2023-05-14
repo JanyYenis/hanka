@@ -1,0 +1,27 @@
+
+#form label .estrella {
+  font-size: 50px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label .estrella {
+  color: grey;
+  font-size: 200%;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label .estrella:hover,
+label .estrella:hover ~ label {
+  color: #ffbe0c;
+}
+
+input[type="radio"]:checked ~ label {
+  color: #ffbe0c;
+}
