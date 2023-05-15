@@ -104,7 +104,7 @@ Generalidades.prototype.Select2 = function (
     let formularioCercano = $(id).closest("form");
     console.log(formularioCercano);
         resultado.select2({
-            // theme: "bootstrap-5",
+            theme: "bootstrap-5",
             // dropdownParent: $('#formEditarProductos').parent(),
             allowClear: allowClear,
             width: "100%",
@@ -172,12 +172,28 @@ Generalidades.prototype.Select2 = function (
                     return "Buscando…";
                 }
             },
-            // escapeMarkup: function(markup) {
-            //     return markup;
-            // }
-            // ,
-            // templateResult: templateResult,
-            // templateSelection: templateSelection
+            escapeMarkup: function(markup) {
+                return markup;
+            },
+            templateResult: function(repo){
+                if (repo.loading) return repo.text;
+                var markup = "<div class='select2-result-repository clearfix'>" +
+                    "<div class='select2-result-repository__meta'>" +
+                    "<div class='select2-result-repository__title'>" + repo.full_name + "</div>";
+                if (repo.description) {
+                    markup += "<div class='select2-result-repository__description'>" + repo.description + "</div>";
+                }
+                markup += "<div class='select2-result-repository__statistics'>" +
+                    "<div class='select2-result-repository__forks'><i class='fa fa-flash'></i> " + repo.forks_count + " Forks</div>" +
+                    "<div class='select2-result-repository__stargazers'><i class='fa fa-star'></i> " + repo.stargazers_count + " Stars</div>" +
+                    "<div class='select2-result-repository__watchers'><i class='fa fa-eye'></i> " + repo.watchers_count + " Watchers</div>" +
+                    "</div>" +
+                    "</div></div>";
+                return markup;
+            },
+            templateSelection: function(repo){
+                return repo.full_name || repo.text;
+            }
         })
         .on("change", function () {
             let formContenedor = $(this).closest("form");

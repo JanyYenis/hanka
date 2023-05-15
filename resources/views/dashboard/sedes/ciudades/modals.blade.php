@@ -6,7 +6,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title text-center" id="exampleModalLabel">Ver Ciudades</h5>
-                    <button type="button" class="btn-close fas fa-times icon-2x" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn btn-outline-secondary fas fa-times icon-2x" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div id="verCiudades"></div>
@@ -25,7 +25,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title text-center" id="exampleModalLabel">Editar Ciudades</h5>
-                    <button type="button" class="btn-close fas fa-times icon-2x btnLimpiar" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn btn-outline-secondary fas fa-times icon-2x btnLimpiar" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div id="errores">
@@ -51,7 +51,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title text-center" id="exampleModalLabel">Crear Ciudades</h5>
-                    <button type="button" class="btn-close fas fa-times icon-2x btnLimpiar" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn btn-outline-secondary fas fa-times icon-2x btnLimpiar" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div id="errores">
