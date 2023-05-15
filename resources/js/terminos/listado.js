@@ -86,11 +86,17 @@ const listadoTerminos = () => {
             },
             {
                 data: 'created_at',
-                name: 'created_at'
+                name: 'created_at',
+                render: function(data, type, full, meta){
+                    return full?.created_at ?? 'N/A';
+                }
             },
             {
                 data: 'updated_at',
-                name: 'updated_at'
+                name: 'updated_at',
+                render: function(data, type, full, meta){
+                    return full?.updated_at ?? 'N/A';
+                }
             },
             {
                 data: 'estado',

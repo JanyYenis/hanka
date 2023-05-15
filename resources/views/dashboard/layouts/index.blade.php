@@ -16,10 +16,6 @@
     <link rel="stylesheet" href="{{ mix('css/plugins/custom/prismjs/prismjs.css') }}">
     <link rel="stylesheet" href="{{ mix('css/plugins/custom/fullcalendar/fullcalendar.css') }}">
     <link rel="stylesheet" href="{{ mix('css/themes/wizard-1.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('css/select-multiple/principal.css') }}"> --}}
-
-    {{-- <link href="{{ mix('css/dataTable/dataTables.css') }}" rel="stylesheet" /> --}}
-    <link href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.bootstrap.min.css" rel="stylesheet"/>
 </head>
 
 <style>
@@ -78,7 +74,7 @@
                     <div class="d-flex flex-column-fluid">
                         <div class="container">
                             <div class="row">
-                                <div class="col-xxl-8 order-1 order-xxl-1">
+                                <div class="col-xxl-8 order-1 order-xxl-1" id="contenidoPrincipal">
                                     <div class="card card-custom card-stretch gutter-b">
                                         @section('contenido')
                                         @show
@@ -136,11 +132,6 @@
     </script>
     <script src="{{ mix('/js/app.js') }}" ></script>
     <script src="{{ asset('/js/plugins.js') }}" ></script>
-    
-    {{-- <script src="{{ mix('js/select-multiple/principal.js') }}"></script> --}}
-    {{-- <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script> --}}
-    {{-- <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script> --}}
-    {{-- <script src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script> --}}
     
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="{{ asset('js/datatables.bundle.js') }}"></script>
