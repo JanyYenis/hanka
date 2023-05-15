@@ -86,7 +86,7 @@
                         @endif
                         <div class="container">
                             <div class="row">
-                                <div class="col-xxl-8 order-1 order-xxl-1">
+                                <div class="col-xxl-8 order-1 order-xxl-1" id="contenidoPrincipal">
                                     <div class="card card-custom card-stretch gutter-b">
                                         @section('contenido')
                                         @show

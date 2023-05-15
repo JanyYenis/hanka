@@ -86087,3 +86087,8 @@ body {
     left: 70px;
   }
 }
+
+#contenidoPrincipal {
+  max-width: 1500px;
+  flex: 0%;
+}

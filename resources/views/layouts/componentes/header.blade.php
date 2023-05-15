@@ -17,7 +17,7 @@
             <div id="kt_header_menu" class="header-menu header-menu-mobile header-menu-layout-default">
                 <ul class="menu-nav">
                     <a href="{{route('home.index')}}" class="brand flex-column-auto" style="background-color: rgb(255, 255, 255)">
-                        <img alt="Logo" src="{{asset('img/LOGO2.png')}}" width="100" height="30">
+                        <img alt="Logo" src="{{asset('img/LOGO2.png')}}" width="100">
                     </a>
                     <li class="menu-item menu-item-submenu menu-item-active" data-menu-toggle="click" aria-haspopup="true">
                         <a href="{{route('home.index')}}" class="menu-link">

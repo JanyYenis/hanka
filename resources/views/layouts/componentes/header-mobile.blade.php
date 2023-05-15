@@ -1,8 +1,8 @@
 <!--begin::Header Mobile-->
 <div id="kt_header_mobile" class="header-mobile align-items-center header-mobile-fixed">
     <!--begin::Logo-->
-    <a href="/metronic/demo1/index.html">
-        <img alt="Logo" src="{{asset('img/hanka_logo.png')}}">
+    <a href="{{route('home.index')}}">
+        <img alt="Logo" src="{{asset('img/LOGO2.png')}}" width="30%">
     </a>
     <!--end::Logo-->
     <!--begin::Toolbar-->

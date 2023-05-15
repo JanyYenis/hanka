@@ -27505,7 +27505,7 @@ h3 {
     size: a3;
   }
   body {
-    min-width: 992px !important;
+    /* min-width: 992px !important; */
   }
 
   .container {
@@ -86086,4 +86086,9 @@ body {
   .aside-enabled.aside-minimize.footer-fixed .footer {
     left: 70px;
   }
+}
+
+#contenidoPrincipal {
+  max-width: 1500px;
+  flex: 0%;
 }
