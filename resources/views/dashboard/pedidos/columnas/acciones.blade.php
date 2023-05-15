@@ -15,14 +15,6 @@
                 </li>
                 <li class="navi-separator mb-3 opacity-70"></li>
                 <li class="navi-item">
-                    <a class="navi-link btnEditarPedido" title="Editar pedido." data-modificar="{{$id}}">
-                        <i class="text-warning fas fa-edit"></i>
-                        <span class="navi-text">
-                            <span class="text-dark">&nbsp;&nbsp;Editar</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="navi-item">
                     <a class="navi-link btnVerFactura" title="Ver factura." href="{{route('pedidos.export-factura', ["pedido" => $id])}}">
                         <i class="text-danger far fa-file-pdf"></i>
                         <span class="navi-text">
